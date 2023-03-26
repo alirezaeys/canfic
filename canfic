@@ -1,0 +1,45 @@
+{
+		"inbounds": [],
+		"outbounds": [
+				{
+						"mux": {
+								"enabled": false
+						},
+						"protocol": "vmess",
+						"settings": {
+								"vnext": [
+										{
+												"address": "5.252.22.183",
+												"port": 80,
+												"users": [
+														{
+																"alterId": 0,
+																"id": "71c95291-d542-43d8-be77-a35c20ad9db1",
+																"level": 8,
+																"security": "auto"
+														}
+												]
+										}
+								]
+						},
+						"streamSettings": {
+								"grpcSettings": {
+										"serviceName": ""
+								},
+								"network": "grpc",
+								"security": "none"
+						},
+						"tag": "VMESS"
+				}
+		],
+		"policy": {
+				"levels": {
+						"8": {
+								"connIdle": 300,
+								"downlinkOnly": 1,
+								"handshake": 4,
+								"uplinkOnly": 1
+						}
+				}
+		}
+}
